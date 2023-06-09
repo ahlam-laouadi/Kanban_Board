@@ -1,38 +1,114 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;0,700;1,400&display=swap');
+
+body {
+    background-color: #1c1d1f;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    margin: 0;
+    padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 25px;
+    background-color: #202224;
+    box-shadow: 0 1px 3px rgb(0 0 0 / 12%), 0 1px 2px rgb(0 0 0 / 24%);
+    border-bottom: 1px solid #050505;
+    align-items: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.logo {
+    text-align: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.list-grid {
+    padding: 5px 5px;
+    border-radius: 5px;
+    margin: 20px 4px;
+    background-color: #202224;
+    box-shadow: 0 1px 3px rgb(0 0 0 / 12%), 0 1px 2px rgb(0 0 0 / 24%);
 }
 
-.App-link {
-  color: #61dafb;
+.avatar {
+    height: 22px;
+    width: 22px;
+    border-radius: 50%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.buttons-container {
+    display: flex;
+    justify-content: center;
+}
+
+.btn {
+    cursor: pointer;
+    border: 0;
+    font-weight: 600;
+    padding: 10px;
+    background: #050505;
+    color: #fff;
+    font-size: 15px;
+    width: 175px;
+    margin-right: 10px;
+    box-shadow: 0 1px 3px rgb(0 0 0 / 12%), 0 1px 2px rgb(0 0 0 / 24%);
+    height: 53px;
+}
+
+.MuiDialog-paper {
+    background-color: #1c1d1f !important;
+    color: #fff !important;
+    min-width: 600px !important;
+}
+
+.MuiDialogContentText-root {
+    color: #fff !important;
+    display: flex !important;
+    justify-content: space-between !important;
+}
+
+.column-header {
+    font-size: 16px;
+    color: #e3e3e3;
+    margin: 15px 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+span.count {
+    font-size: 14px;
+    color: #d1d1d1;
+}
+
+.task-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    color: #e3e3e3;
+}
+
+.task-details span {
+    margin: 6px 0;
+}
+
+.dialog-title {
+    font-size: 15px !important;
+}
+
+.footer-btn {
+    color: #76787c;
+    border: 1px solid #76787c;
+    padding: 3px;
+    font-size: 13px;
+}
+
+.footer-prio {
+    color: #76787c;
+    padding: 0 3px 1px 3px;
+    font-size: 10px;
+}
+
+.footer-prio svg {
+    width: 25px;
+    height: 18px;
 }
